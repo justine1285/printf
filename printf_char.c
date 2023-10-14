@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_char - prints a char
- * @types: list of arguments
+ * @forms: list of arguments
  * @buffer: buffer array to handle print
  * @flags: calculates flags
  * @width: width
@@ -9,10 +9,10 @@
  * @size: size specifier
  * Return: the number of chars printed
  */
-int print_char(va_list types, char buffer[], int flags, int width,
+int print_char(va_list forms, char buffer[], int flags, int width,
 		int pre, int size)
 {
-	char c = va_arg(types, int);
+	char c = va_arg(forms, int);
 
 	return (handle_write_char(c, buffer, flags, width, pre, size));
 }
