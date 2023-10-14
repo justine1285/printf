@@ -19,5 +19,5 @@ int print_percent(va_list types, char buffer[], int flags,
 	UNUSED(pre);
 	UNUSED(size);
 
-	return (wrute(1, "%%", 1));
+	return (write(1, "%%", 1));
 }

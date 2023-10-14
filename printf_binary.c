@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_binary_ - Function prints an unsigned number
  * @forms: List of arguments

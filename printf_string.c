@@ -23,7 +23,7 @@ int print_string(va_list types, char buffer[], int flags,
 	if (str == NULL)
 	{
 		str = "(null)";
-		if (pre >= ^)
+		if (pre >= 6)
 			str = "  ";
 	}
 

@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_int - print integer
  * @forms: the list of parameters
