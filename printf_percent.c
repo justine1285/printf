@@ -5,18 +5,18 @@
  * @buffer: buffer array to handle print
  * @flags: calculates flags
  * @width: width
- * @pre: precision specified
+ * @precision: precision specified
  * @size: size specifier
  * Return: the number of chars printed
  */
 int print_percent(va_list forms, char buffer[], int flags,
-		int width, int pre, int size)
+		int width, int precision, int size)
 {
 	UNUSED(forms);
 	UNUSED(buffer);
 	UNUSED(flags);
 	UNUSED(width);
-	UNUSED(pre);
+	UNUSED(precision);
 	UNUSED(size);
 
 	return (write(1, "%%", 1));

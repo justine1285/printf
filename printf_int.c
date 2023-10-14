@@ -9,7 +9,8 @@
  * @precision: to get the specific precision
  * Return: Number of chars printed
  */
-int print_int(va_list forms, char buffer[], int flags, int width, int precision, int size)
+int print_int(va_list forms, char buffer[], int flags,
+		int width, int precision, int size)
 {
 
 	int k = BUFF_SIZE - 2;
