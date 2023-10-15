@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * printf_binary - Function prints an unsigned number
+ * printBinary - Function prints an unsigned number
  * @forms: List of arguments
  * @buffer: Buffer array to handle print
  * @flags: To calc active flags.
@@ -9,7 +9,7 @@
  * @size: Size specifier
  * Return: The number of characters to be printed.
  */
-int print_binary(va_list forms, char buffer[],
+int printBinary(va_list forms, char buffer[],
 	int flags, int width, int precision, int size)
 {
 	unsigned int n, g, y, sum;

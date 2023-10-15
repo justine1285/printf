@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_int - print integer
+ * printInt - print integer
  * @forms: the list of parameters
  * @buffer: Buffer array to handle print
  * @flags: to calculate the active flags
@@ -9,7 +9,7 @@
  * @precision: to get the specific precision
  * Return: Number of chars printed
  */
-int print_int(va_list forms, char buffer[], int flags,
+int printInt(va_list forms, char buffer[], int flags,
 		int width, int precision, int size)
 {
 
@@ -37,5 +37,5 @@ int print_int(va_list forms, char buffer[], int flags,
 
 	k++;
 
-	return (write_number(neg, k, buffer, flags, width, precision, size));
+	return (writeNumber(neg, k, buffer, flags, width, precision, size));
 }

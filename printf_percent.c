@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_percent - prints a percent sign
+ * printPercent - prints a percent sign
  * @forms: list of arguments
  * @buffer: buffer array to handle print
  * @flags: calculates flags
@@ -9,7 +9,7 @@
  * @size: size specifier
  * Return: the number of chars printed
  */
-int print_percent(va_list forms, char buffer[], int flags,
+int printPercent(va_list forms, char buffer[], int flags,
 		int width, int precision, int size)
 {
 	UNUSED(forms);

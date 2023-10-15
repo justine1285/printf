@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * handle_print - prints an argument based on its type
+ * handlePrint - prints an argument based on its type
  * @format: format string to print the argument
  * @list: list of argument to be printed
  * @ind: ind
@@ -12,7 +12,7 @@
  * @fn: function
  * Return: 1 or 2
  */
-int handle_print(const char *format, int *ind, va_list list, char buffer[],
+int handlePrint(const char *format, int *ind, va_list list, char buffer[],
 		int flags, int width, int precision, int size)
 {
 	int x, y = 0, printed_chars = -1;

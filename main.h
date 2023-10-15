@@ -41,24 +41,24 @@ struct format
 typedef struct format format_types;
 
 int _printf(const char *format, ...);
-int handle_print(const char *format, int *x,
+int handlePrint(const char *format, int *x,
 va_list list, char buffer[], int flags, int width, int precision, int size);
 
 
 /* Functions to print chars and strings */
-int print_char(va_list forms, char buffer[],
+int printChar(va_list forms, char buffer[],
 	int flags, int width, int precision, int size);
-int print_string(va_list forms, char buffer[],
+int printString(va_list forms, char buffer[],
 	int flags, int width, int precision, int size);
-int print_percent(va_list forms, char buffer[],
+int printPercent(va_list forms, char buffer[],
 	int flags, int width, int precision, int size);
 
 /* Functions to print numbers */
-int print_int(va_list forms, char buffer[],
+int printInt(va_list forms, char buffer[],
 	int flags, int width, int precision, int size);
-int print_binary(va_list forms, char buffer[],
+int printBinary(va_list forms, char buffer[],
 	int flags, int width, int precision, int size);
-int print_unsigned(va_list forms, char buffer[],
+int printUnsigned(va_list forms, char buffer[],
 	int flags, int width, int precision, int size);
 int print_octal(va_list forms, char buffer[],
 	int flags, int width, int precision, int size);
@@ -75,7 +75,7 @@ int print_non_printable(va_list forms, char buffer[],
 	int flags, int width, int precision, int size);
 
 /* Funcion to print memory address */
-int print_pointer(va_list forms, char buffer[],
+int printPointer(va_list forms, char buffer[],
 	int flags, int width, int precision, int size);
 
 /* Funciotns to handle other specifiers */
@@ -85,33 +85,32 @@ int get_precision(const char *format, int *x, va_list list);
 int get_size(const char *format, int *x);
 
 /*Function to print string in reverse*/
-int print_reverse(va_list types, char buffer[],
+int printReverse(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
 /*Function to print a string in rot 13*/
-int print_rot13string(va_list types, char buffer[],
+int printRot13string(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 
 /* width handler */
-int handle_write_char(char c, char buffer[],
+int writeHandle(char c, char buffer[],
 	int flags, int width, int precision, int size);
-int write_number(int is_positive, int ind, char buffer[],
+int writeNumber(int x, int ind, char buffer[],
 	int flags, int width, int precision, int size);
-int write_num(int ind, char bff[], int flags, int width, int precision,
+int writeBuffer(int ind, char buffer[], int flags, int width, int precision,
 	int length, char padd, char extra_c);
-int write_pointer(char buffer[], int ind, int length,
+int writePointer(char buffer[], int ind, int y,
 	int width, int flags, char padd, char extra_c, int padd_start);
 
-int write_unsgnd(int is_negative, int ind,
-char buffer[],
+int write_unsigned_num(int x, int ind,char buffer[],
 	int flags, int width, int precision, int size);
 
 /*utils*/
-int is_printable(char);
+int my_printable(char);
 int append_hexa_code(char, char[], int);
-int is_digit(char);
+int my_digit(char);
 
-long int convert_size_number(long int num, int size);
-long int convert_size_unsgnd(unsigned long int num, int size);
+long int convert_size_number(long int x, int y);
+long int convert_size_unsgnd(unsigned long int x, int y);
 
 #endif /* MAIN_H */

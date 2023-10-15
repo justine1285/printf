@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_string - prints a string
+ * printString - prints a string
  * @forms: list of arguments
  * @buffer: buffer array to handle print
  * @flags: calculates flags
@@ -9,7 +9,7 @@
  * @size: size specifier
  * Return: the number of chars printed
  */
-int print_string(va_list forms, char buffer[], int flags,
+int printString(va_list forms, char buffer[], int flags,
 		int width, int precision, int size)
 {
 	int x = 0, y;
