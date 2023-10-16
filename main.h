@@ -26,4 +26,6 @@ int prints_unsigned(va_list args);
 int prints_octal(va_list forms);
 int prints_hexadec(va_list forms);
 int prints_hexupp(va_list forms);
+int prints_exehex(unsigned int nos);
+
 #endif /* MAIN_H */
