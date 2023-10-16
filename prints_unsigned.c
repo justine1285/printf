@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * print_ints - prints integers
- * @args: prints argument
- * Return: number of characters printed
+ * prints_unsigned - prints an integer
+ * @args: prints parameters
+ * Return: number of chars printed
  */
-int print_ints(va_list args)
+int prints_unsigned(va_list args)
 {
-	int k = va_arg(args, int);
+	unsigned int k = va_arg(args, unsigned int);
 	int y, last = k % 10, digit, exp = 1;
 	int z = 1;
 
@@ -42,3 +42,4 @@ int print_ints(va_list args)
 
 	return (z);
 }
+

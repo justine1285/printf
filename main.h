@@ -22,4 +22,8 @@ int print_ints(va_list args);
 int print_binary(va_list forms);
 >>>>>>> 4c0b2abd18496224708ffac35cfbdc9f223349ea
 
+int prints_unsigned(va_list args);
+int prints_octal(va_list forms);
+int prints_hexadec(va_list forms);
+int prints_hexupp(va_list forms);
 #endif /* MAIN_H */
