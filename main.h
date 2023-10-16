@@ -27,5 +27,6 @@ int prints_octal(va_list forms);
 int prints_hexadec(va_list forms);
 int prints_hexupp(va_list forms);
 int prints_exehex(unsigned int nos);
+int print_special(va_list forms);
 
 #endif /* MAIN_H */
