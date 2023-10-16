@@ -7,7 +7,7 @@
 int print_ints(va_list args)
 {
 	int k = va_arg(args, int);
-	int y, last = n % 10, digit, exp = 1;
+	int y, last = k % 10, digit, exp = 1;
 	int z = 1;
 
 	k = k / 10;
