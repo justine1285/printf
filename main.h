@@ -62,12 +62,12 @@ int printUnsigned(va_list forms, char buffer[],
 	int flags, int width, int precision, int size);
 int print_octal(va_list forms, char buffer[],
 	int flags, int width, int precision, int size);
-int print_hexadecimal(va_list forms, char buffer[],
+int print_hexa(va_list forms, char buffer[],
 	int flags, int width, int precision, int size);
 int print_hexa_upper(va_list forms, char buffer[],
 	int flags, int width, int precision, int size);
 
-int print_hexa(va_list forms, char mapps_[],
+int print_hexadecimal(va_list forms, char mapps_[],
 char buffer[], int flags, char flaggs_, int width, int precision, int size);
 
 /* Function to print non printable characters */
@@ -100,14 +100,14 @@ int writeNumber(int x, int ind, char buffer[],
 int writeBuffer(int ind, char buffer[], int flags, int width, int precision,
 	int length, char padd, char extra_c);
 int writePointer(char buffer[], int ind, int y,
-	int width, int flags, char padd, char extra_c, int padd_start);
+	int width, int flags, char padd, char x, int y_start);
 
-int write_unsigned_num(int x, int ind,char buffer[],
+int write_unsigned_num(int x, int ind, char buffer[],
 	int flags, int width, int precision, int size);
 
 /*utils*/
 int my_printable(char);
-int append_hexa_code(char, char[], int);
+int appendHexa(char ascii_code, char buffer[], int index);
 int my_digit(char);
 
 long int convert_size_number(long int x, int y);
