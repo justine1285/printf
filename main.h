@@ -6,6 +6,7 @@
 #include <unistd.h>
 
 int print_decimal(va_list args);
-int print_int(va_list arg);
+int print_ints(va_list args);
+int print_binary(va_list forms);
 
 #endif /* MAIN_H */

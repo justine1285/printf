@@ -1,23 +1,23 @@
 #include "main.h"
 /**
- * printf_int - prints integers
- * @arg: prints argument
+ * print_ints - prints integers
+ * @args: prints argument
  * Return: number of characters printed
  */
-int print_int(va_list arg)
+int print_ints(va_list args)
 {
-	int x = va_arg(args, int);
+	int k = va_arg(args, int);
 	int y, last = n % 10, digit, exp = 1;
 	int z = 1;
 
-	x = x / 10;
-	y = x;
+	k = k / 10;
+	y = k;
 
 	if (last < 0)
 	{
-		_putchar('-');
+		_putchars('-');
 		y = -y;
-		x = -x;
+		k = -k;
 		last = -last;
 		z++;
 	}
@@ -28,17 +28,17 @@ int print_int(va_list arg)
 			exp = exp * 10;
 			y = y / 10;
 		}
-		y = x;
+		y = k;
 		while (exp > 0)
 		{
 			digit = y / exp;
-			_putchar(digit + '0');
+			_putchars(digit + '0');
 			y = y - (digit * exp);
 			exp = exp / 10;
 			z++;
 		}
 	}
-	_putchar(last + '0');
+	_putchars(last + '0');
 
 	return (z);
 }
