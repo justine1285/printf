@@ -17,7 +17,7 @@ int prints_octal(va_list forms)
 		tally++;
 	}
 	tally++;
-	oct = malloc(sizeof(int) * tally);
+	oct = malloc(tally * sizeof(int));
 
 	for (y = 0; y < tally; y++)
 	{
