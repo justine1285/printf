@@ -16,14 +16,14 @@ int prints_exehex(unsigned int nos)
 		tally++;
 	}
 	tally++;
-	oct = malloc(sizeof(int) * tally);
+	oct = malloc(tally * sizeof(int));
 
 	for (y = 0; y < tally; y++)
 	{
 		oct[y] = nas % 16;
 		nas = nas / 16;
 	}
-	for (y = tally - 1; y >= 0; y++)
+	for (y = tally - 1; y >= 0; y--)
 	{
 		if (oct[y] > 9)
 			oct[y] = oct[y] + 7;

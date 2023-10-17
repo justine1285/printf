@@ -13,16 +13,17 @@ int printHexextra(unsigned long int nos)
 	while (nos / 16 != 0)
 	{
 		nos = nos / 16;
+		counter++;
 	}
 	counter++;
-	array = malloc(sizeof(long int) * counter);
+	array = malloc(counter * sizeof(long int));
 
 	for (k = 0; k < counter; k++)
 	{
 		array[k] = tem % 16;
 		tem = tem / 16;
 	}
-	for (k = counter - 1; k >= 0; k++)
+	for (k = counter - 1; k >= 0; k--)
 	{
 		if (array[k] > 9)
 			array[k] = array[k] + 39;
