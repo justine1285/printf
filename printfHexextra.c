@@ -4,7 +4,7 @@
  * @forms: value
  * Return: counter
  */
-int printHexextra(unsigned long int num)
+int printHexextra(unsigned long int nos)
 {
 	long int k, counter = 0;
 	long int *array;

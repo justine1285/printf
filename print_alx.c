@@ -7,8 +7,8 @@
 int _strlens(char *alx)
 {
 	int y;
-	
-	for (y = 0; alx[y] != 0; y==)
+
+	for (y = 0; alx[y] != 0; y++)
 		;
 	return (y);
 }

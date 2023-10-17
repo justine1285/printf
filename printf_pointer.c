@@ -7,7 +7,7 @@
 int print_pointers(va_list forms)
 {
 	void *p;
-	char *k = "(nil)';
+	char *k = "(nil)";
 	long int y;
 	int z, j;
 
@@ -16,7 +16,7 @@ int print_pointers(va_list forms)
 	{
 		for (z = 0; k[z] != '\0'; z++)
 			_putchars(k[z]);
-		rteurn (z);
+		return (z);
 	}
 	y = (unsigned long int)p;
 	_putchars('0');
