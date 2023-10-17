@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * printHexextra - converts to hex
- * @forms: value
+ * @nos: number to print
  * Return: counter
  */
 int printHexextra(unsigned long int nos)

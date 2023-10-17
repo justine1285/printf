@@ -1,11 +1,11 @@
 #include "main.h"
 /**
  * prints_percent - prints percentage
- * Return: 1
+ * Return: the amount of characters printed
  */
 
-int prints_percent(void)
+int prints_percent(__attribute__((unused))va_list list)
 {
-	_putchars(37);
+	_putchars('%');
 	return (1);
 }

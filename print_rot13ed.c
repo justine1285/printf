@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_rot13ed = convert to rot13
+ * print_rot13ed - convert to rot13
  * @forms: argument
  * Return: counter
  */

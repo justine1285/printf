@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * prints_exehex - converts to upper hexadecimal
- * @forms: list of parameters
+ * @nos: argument
  * Return: tally
  */
 int prints_exehex(unsigned int nos)
