@@ -28,4 +28,3 @@ int prints_string(va_list forms)
 		return (length);
 	}
 }
-
