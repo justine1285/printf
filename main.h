@@ -10,12 +10,12 @@
 
 /**
  * struct format - match the conversion specifier for printf
- * @cp: type char pointer for the specifier
+ * @id: type char pointer for the specifier
  * @fun: type pointer to function for the specifier
  */
 typedef struct format
 {
-	char *cp;
+	char *id;
 	int (*fun)();
 } convert_match;
 

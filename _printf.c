@@ -27,7 +27,7 @@ Here:
 		k = 13;
 		while (k >= 0)
 		{
-			if (m[k].cp[0] == format[z] && m[k].cp[1] == format[z + 1])
+			if (m[k].id[0] == format[z] && m[k].id[1] == format[z + 1])
 			{
 				length += m[k].fun(args);
 				z = z + 2;

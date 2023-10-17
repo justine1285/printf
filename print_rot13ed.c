@@ -13,7 +13,7 @@ int print_rot13ed(va_list forms)
 	char j[] = {"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"};
 
 	if (s == NULL)
-		s = "(null";
+		s = "(null)";
 	for (k = 0; s[k]; k++)
 	{
 		y = 0;

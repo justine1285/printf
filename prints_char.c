@@ -9,7 +9,7 @@ int prints_char(va_list forms)
 {
 	char alx;
 
-	alx =(char)va_arg(forms, int);
+	alx = va_arg(forms, int);
 	
 	_putchars(alx);
 	return (1);

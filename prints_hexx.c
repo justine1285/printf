@@ -33,4 +33,3 @@ int prints_hexadec(va_list forms)
 	free(oct);
 	return (tally);
 }
-
