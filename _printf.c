@@ -6,12 +6,12 @@
  */
 int _printf(const char *format, ...)
 {
-	match m[] = {
-		{"%s", printf_s}, {"%c", printf_c}, {"%%",  printf_percent},
-		{"%i", print_int}, {"%d", printf_decimal}, {"%r", printf_rev},
-		{"%R", printf_rot13ed}, {"%b", printf_binary},
-		{"%u", prints_unsigned}, {"%o", prints_octal}, {"%x", prints_hexx},
-		{"%X", prints_hexupp}, {"%S", prints_special}, {"%p", printf_pointer}
+	convert_match m[] = {
+		{"%s", prints_string}, {"%c", prints_char}, {"%%",  prints_percent},
+		{"%i", print_ints}, {"%d", print_decimal}, {"%r", printf_rev},
+		{"%R", print_rot13ed}, {"%b", print_binary},
+		{"%u", prints_unsigned}, {"%o", prints_octal}, {"%x", prints_hexadec},
+		{"%X", prints_hexupp}, {"%S", print_special}, {"%p", print_pointers}
 	};
 
 	va_list args;
@@ -27,9 +27,9 @@ Here:
 		k = 13;
 		while (k >= 0)
 		{
-			if (m[k].id[0] == format[z] && m[k].id[1] == format[z + 1])
+			if (m[k].cp[0] == format[z] && m[k].cp[1] == format[z + 1])
 			{
-				length += cm[k].f(args);
+				length += m[k].fun(args);
 				z = z + 2;
 				goto Here;
 			}

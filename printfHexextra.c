@@ -16,8 +16,7 @@ int printHexextra(unsigned long int nos)
 	}
 	counter++;
 	array = malloc(sizeof(long int) * counter);
-	if (array == NULL)
-		return (NULL);
+
 	for (k = 0; k < counter; k++)
 	{
 		array[k] = tem % 16;

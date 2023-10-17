@@ -28,7 +28,7 @@ int print_rot13ed(va_list forms)
 		}
 		if (!y)
 		{
-		_putchar(s[k]);
+		_putchars(s[k]);
 		counter++;
 		}
 	}

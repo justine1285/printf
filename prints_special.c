@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_special - prints special string
+ * print_special - print special string
  * @forms: form
  * Return: number of chars to be printed
  */

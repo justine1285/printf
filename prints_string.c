@@ -15,14 +15,14 @@ int prints_string(va_list forms)
 	if (alx == NULL)
 	{
 		alx = "(null)";
-		length = _strlen(alx);
+		length = _strlenx(alx);
 		for (y = 0; y < length; y++)
 			_putchars(alx[y]);
 		return (length);
 	}
 	else
 	{
-		length = _strlen(alx);
+		length = _strlenx(alx);
 		for (y = 0; y < length; y++)
 			_putchars(alx[y]);
 		return (length);

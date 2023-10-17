@@ -15,6 +15,6 @@ int printf_rev(va_list args)
 	while (k[y] != '\0')
 		y++;
 	for (z = y - 1; z >= 0; z--)
-		_putchar(k[z]);
+		_putchars(k[z]);
 	return (y);
 }

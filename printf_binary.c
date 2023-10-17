@@ -2,7 +2,7 @@
 /**
  * print_binary - converts to binary
  * @forms: argument
- * Return: integer
+ * Return: 1
  */
 int print_binary(va_list forms)
 {
@@ -14,7 +14,7 @@ int print_binary(va_list forms)
 
 	for (z = 0; z < 32; z++)
 	{
-		x = ((i << (32 - z)) & num);
+		x = ((i << (31 - z)) & num);
 		if (x >> (31 - z))
 			k = 1;
 		if (k)
@@ -30,3 +30,4 @@ int print_binary(va_list forms)
 		_putchars('0');
 	}
 	return (y);
+}
