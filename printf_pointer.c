@@ -7,21 +7,22 @@
 int print_pointers(va_list forms)
 {
 	void *p;
-	char *k = "(nil)";
+	char *alx = "(nil)";
 	long int y;
-	int z, j;
+	int z;
+	int j;
 
-	p = va_arg(forms, void *);
+	p = va_arg(forms, void*);
 	if (p == NULL)
 	{
-		for (z = 0; k[z] != '\0'; z++)
-			_putchars(k[z]);
-		return (z);
+		for (j = 0; alx[j] != '\0'; j++)
+			_putchars(alx[j]);
+		return (j);
 	}
 	y = (unsigned long int)p;
 	_putchars('0');
 	_putchars('x');
-	j = printHexextra(y);
+	z = printHexextra(y);
 
-	return (j + 2);
+	return (z + 2);
 }
