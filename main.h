@@ -42,5 +42,5 @@ int print_rot13ed(va_list forms);
 int *_strcpy(char *dest, char *src);
 int printf_rev(va_list args);
 int rev_string(char *s);
-int get_flagggs(const char *format, int *i)
+
 #endif /* MAIN_H */
