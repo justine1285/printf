@@ -16,7 +16,9 @@ int print_pointers(va_list forms)
 	if (p == NULL)
 	{
 		for (j = 0; alx[j] != '\0'; j++)
+		{
 			_putchars(alx[j]);
+		}
 		return (j);
 	}
 	y = (unsigned long int)p;
