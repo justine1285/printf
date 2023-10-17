@@ -29,7 +29,7 @@ Here:
 		{
 			if (m[k].id[0] == format[z] && m[k].id[1] == format[z + 1])
 			{
-				length += m[k].fun(args);
+				length += m[k].f(args);
 				z = z + 2;
 				goto Here;
 			}
