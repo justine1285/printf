@@ -13,7 +13,7 @@ int print_special(va_list forms)
 	t = va_arg(forms, char *);
 	if (t == NULL)
 		t = "(null)";
-	for (y = 0; t[y] != '0'; y++)
+	for (y = 0; t[y] != '\0'; y++)
 	{
 		if (t[y] < 32 || t[y] >= 127)
 		{
