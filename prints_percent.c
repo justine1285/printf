@@ -1,15 +1,11 @@
 #include "main.h"
 /**
  * prints_percent - prints percentage
- * @format: format
- * @forms: va_list
- * Return: number of characters printed
+ * Return: 1
  */
 
-int prints_percent(char *format, va_list forms)
+int prints_percent(void)
 {
-	(void)format;
-	(void)forms;
-	_putchars('%');
+	_putchars(37);
 	return (1);
 }
